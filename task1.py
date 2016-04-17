@@ -6,8 +6,10 @@ import sympy as sy
 # DO NOT CHANGE THE NAME OF gausslegendre() function
 def gausslegendre(f, a, b, n=20):
     ans = 0
-    # Edit here to implement your code
-
+    x, w=np.polynomial.legendre.leggauss(n)
+    #to change the interval, translate the x values from [-1,1] to [a,b]
+    y = (b-a)*x*0.5+(a+b)*0.5
+    ans = sum(w * f(y))*0.5*(b-a)
     return ans
 
 if __name__ == "__main__":
