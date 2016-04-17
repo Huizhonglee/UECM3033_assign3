@@ -28,6 +28,7 @@ Explain how you implement your `task2.py` here, especially how to use `odeint`.
 In task2, numpy, scipy and matplotlib.pyplot have imported as np,sp and plt. Then, a self-defined function has built with the name of g(t,y).In this function, parameter a and b set as 1.0 and 0.2 respectively. After that, return the result of differential equation. Linspace function is used to define the time of 5 years. The system of first order ODE is solved by using sol=sp.integrate.odeint().Graph of y0 and y1 against t and graph of y1 against y0 plotted. To test the sensitivity, graph of y0 and y1 against t and graph of y1 against y0 plotted again by using initial conditions of y0=0.11 and y1=1.0.
 
 Put your graphs here and explain.
+
 ![ y0,y1 against t.png]( y0,y1 against t.png)
 
 From the graph above, we know that the prey(y0) is increasing as the year(t) increase. Then, predator (y1) is decreasing as the year(t) increase. Year(t) is inversely proportional to prey(y0). Then, it is a square relationship between predator(y1) and year(t). 
